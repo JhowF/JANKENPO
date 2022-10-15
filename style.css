@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+  }
+  #title{
+    margin:15px;
+    display:flex;
+    justify-content:center;
+    font-family: 'Silkscreen', cursive;
+  }
+  
+  
+  #players{
+    display:flex;
+    margin:50px;
+    justify-content:center;
+    font-family: 'Silkscreen', cursive;
+    
+  }
+  
+  
+  .input{
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    margin:20px;
+    width: 400px;
+  }
+  img{
+    width:100px;
+  }
+  
+  #button{
+    
+    display:flex;
+    justify-content:center;
+  }
+  button{
+    width:170px;
+    height:50px;
+    border:2px solid white;
+    border-radius:30px;
+    font-family: 'Silkscreen', cursive;
+    
+  }
+
+  #imagem_jankenpon{
+    width:260px;
+  }
+
+  #div_imagem_jankenpon{
+    display:flex;
+    justify-content: center;
+  }
+
+  
