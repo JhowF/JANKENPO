@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
+:root {
+    --letras:rgb(223, 15, 223);
+    --fundo: black;
+}
+
+
 *{
     margin:0;
     padding:0;
+    background-color: var(--fundo);
+    color: var(--letras);
+    
   }
   #title{
     margin:15px;
@@ -27,6 +36,11 @@
     margin:20px;
     width: 400px;
   }
+  .input::placeholder{
+    color: purple;
+  }
+  
+
   img{
     width:100px;
   }
@@ -39,7 +53,7 @@
   button{
     width:170px;
     height:50px;
-    border:2px solid white;
+    border:2px solid purple;
     border-radius:30px;
     font-family: 'Silkscreen', cursive;
     
@@ -47,11 +61,15 @@
 
   #imagem_jankenpon{
     width:260px;
+    
+    border-radius: 130px;
   }
 
   #div_imagem_jankenpon{
     display:flex;
     justify-content: center;
+    
+    
   }
 
   

@@ -4,11 +4,10 @@ button = document.querySelector('#buttonPress')
 function Start(){
  
 let audio = document.querySelector('#audio')
-audio.setAttribute('src', 'https://www.youtube.com/watch?v=CYDP_8UTAus&list=RDWzQBAc8i73E&index=21');
 audio.play()
-console.log(audio)
-  
-  
+
+
+function strat_2()  {
 Player_1 = document.querySelector('#player_1');
 ply_1 = Player_1.value;
 ply_1 = (ply_1.toUpperCase());
@@ -76,10 +75,11 @@ Digite somente ('Pedra, Papel, ou Tesoura')`)
 }
   
 document.querySelector('#player_1').value = ''
+document.querySelector('#player_1').style.display = 'flex';
 document.querySelector('#player_2').value = ''
-
-
-
+document.querySelector('#player_2').style.display = 'flex'
+}
+setTimeout(strat_2,7000);
 }
 
 
@@ -87,11 +87,20 @@ document.querySelector('#player_2').value = ''
 button.addEventListener('click',Start)
 
 Player_1 = document.querySelector('#player_1');
+Player_2 = document.querySelector('#player_2');
 
 
 function tira(){
     Player_1 = document.querySelector('#player_1');
-    Player_1.setAttribute('display:none')
-}
+    Player_1.style.display = 'none';
 
-Player_1.addEventListener('mouseout', tira);
+}
+function tira_2(){
+         Player_2 = document.querySelector('#player_2');
+        Player_2.style.display = 'none';
+    
+}
+Player_1.addEventListener('focusout', tira);
+
+Player_2.addEventListener('focusout', tira_2);
+
